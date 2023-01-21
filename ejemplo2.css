@@ -1,0 +1,38 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    place-content: center;
+    border: 1px solid #cc9bcc;
+    grid-template-areas: 
+        'header header header' 
+        'side main main' 
+        'side main main'
+    ;
+
+}
+
+.item {
+    font-size:  3rem;
+}
+
+.item-1 {
+    border: 1px solid #f8bbd0;
+    background-color: #ffefff;
+    grid-area: header;
+
+}
+
+.item-2 {
+    border: 1px solid #918992;
+    background-color: #cc9bcc;
+    grid-area: side;
+    
+}
+
+.item-3 {
+    border: 1px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: main;
+}
